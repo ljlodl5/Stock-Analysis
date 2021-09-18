@@ -4,7 +4,7 @@
 Utilizing VBA code, the project provided the ability to automatically aggregate the volume and yearly return from a dataset of 'green stocks' in order to visualize the best stocks to invest in based on historical performance. 
 The focus of the VBA Challenge was specifically an exercise in refactoring. The purpose of refactoring is to take existing code functionality and configure the code steps and logic to achieve higher performance. 
  
-##**Analysis/Results**
+## **Analysis/Results**
 
 **Original stock analysis**: 
 This subroutine provided the correct output for ticker name, volume and return for a small dataset of green stocks. The code for obtaining the volume and return of 12 tickers utilized two nested loops. 
@@ -12,7 +12,7 @@ The inner loop stepped through all the rows in the respective 2017 and 2018 data
 From start to finish the code in the 2018 original sample ran in 2.27 seconds. Initially this automated return may seem fast, but it is a very small subset of 12 tickers and requested output (3 fields). 
 Investment decisions require quick turnaround analysis. If a client wanted to see an unfiltered list of stock exchange tickers (ex: NYSE) and required additional output for investment decisions, a nested loop may not be optimal. 
 
-**Refactored stock analysis**: 
+** Refactored stock analysis**: 
 This subroutine **also** provided the correct output for ticker name, volume and return for a small dataset of green stocks. The goal of this subroutine was to take the original code and refactor the statements in order to improve performance.  
 This was obtained by identifying a ticker index and associating it to several arrays. The arrays ticker, volume, and return must share the same datatype, respectively. The advantage to using an index and arrays was the elimination of the nested loop, and reduction of memory and steps to associate the stock detailed inputs to the aggregated outputs.   
 Then similar to the original stock analysis, the output worksheet (re: Stock Analysis) was formatted for look and feel. 
@@ -24,7 +24,7 @@ From start to finish the code in the 2018 refactored sample ran in .46. This is 
 ![Performance Support 2018](https://github.com/ljlodl5/Stock-Analysis/blob/main/Resources/VBA%20Challenge%202018%20Comparison%20.png)
 
 ### VBA Challenge: Original vs. Refactored Code Comparison 
-![Refactored Code Support][https://github.com/ljlodl5/Stock-Analysis/blob/main/Resources/VBA%20Challenge%20Code%20Comparison.png]**
+![Refactored Code Support](https://github.com/ljlodl5/Stock-Analysis/blob/main/Resources/VBA%20Challenge%20Code%20Comparison.png)
 
 ## **Results**
 ### **VBA Script (Stock-Analysis) Advantages and Disadvantages of Refactoring Code**
