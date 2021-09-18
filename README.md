@@ -4,7 +4,7 @@
 Utilizing VBA code, the project provided the ability to automatically aggregate the volume and yearly return from a dataset of 'green stocks' in order to visualize the best stocks to invest in based on historical performance. 
 The focus of the VBA Challenge was specifically an exercise in refactoring. The purpose of refactoring is to take existing code functionality and configure the code steps and logic to achieve higher performance. 
  
-##**Analysis/Results**
+## **Analysis/Results**
 
 **Original stock analysis**: 
 This subroutine provided the correct output for ticker name, volume and return for a small dataset of green stocks. The code for obtaining the volume and return of 12 tickers utilized two nested loops. 
@@ -19,7 +19,7 @@ Then similar to the original stock analysis, the output worksheet (re: Stock Ana
 From start to finish the code in the 2018 refactored sample ran in .46. This is a notable difference from the original code. 
 
 
-###VBA Challenge: Original vs. Refactored Performance Comparison
+### VBA Challenge: Original vs. Refactored Performance Comparison
 See Enclosed Performance Support 2017 **[]**
 See Enclosed Performance Support 2018 **[]**
 
@@ -27,15 +27,15 @@ See Enclosed Performance Support 2018 **[]**
 See Enclosed Code Support **[]**
 
 ## **Results**
-###**VBA Script (Stock-Analysis) Advantages and Disadvantages of Refactoring Code**
-####Advantages
+### **VBA Script (Stock-Analysis) Advantages and Disadvantages of Refactoring Code**
+#### Advantages
 The most noticeable advantage to the code refactoring is the increased performance. The factored stock-analysis macro runs ~5x faster than the original. This can be attributed to the index/array advantage and the reduction of the nested loop. 
 Also when running the macro multiple times the variation in run speed is greater when the code underperforms. The refactored code provides a stronger predictor of when it will finish than the original code. 
 Begin/end variance may not seem like a large impact for a small dataset, however a robust dataset and strict deadlines may require stronger reliability on assessing when the analysis will be complete. 
 Original Code Run Times:   (Highest=5.5 seconds; Lowest=2.2 seconds)
 Refactored Code Run Times: (Highest=.88 seconds; lowest = .3) 
 
-####Disadvantages
+#### Disadvantages
 There are a couple disadvantages to refactoring code specific to this exercise. For one, it took additional time to reconfigure an already working concept with no guarantee of performance improvement.     
 Second and perhaps minor by comparison, it is much easier to conceptually understand the routines of a nested function than to associate arrays with an index function. 
 I encountered a small issue of my own as I erroneously rebuilt a nested function and found my 'refactored' performance was virtually the same as the the original code.*
@@ -43,11 +43,11 @@ I encountered a small issue of my own as I erroneously rebuilt a nested function
     
 
 
-###**General Advantages and Disadvantages of Refactoring Code**
-####Advantages 
+### **General Advantages and Disadvantages of Refactoring Code**
+#### Advantages 
 There are multiple advantages to refactoring in general. Refactoring not only can improve performance by simplifying steps, logic, and reducing memory it can also just simply clean up the code for future users. 
 It is also important to note the original needs of a client can change over time. Data inputs and outputs can be dynamic and grow; the same manner of coding that worked originally can become outdated and drive down performance. 
-####Disadvantages
+#### Disadvantages
 General disadvantages to refactoring are time and project risk. Not only is a developer coding and unit testing, regression and parallel QA/UAT time may also be required to ensure key functionality/data was not changed in error. 
 If change in function/data does occur, additional time may be spent trying to uncover a version of truth. 
 There are no guarantees that the perfomance benefit will be worth the time invested. It is important to gauge the level of service/time you are trying to achieve and the amount of time/$ you are willing to invest to refactor. 
