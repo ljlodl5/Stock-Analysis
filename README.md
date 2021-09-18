@@ -19,13 +19,12 @@ Then similar to the original stock analysis, the output worksheet (re: Stock Ana
 From start to finish the code in the 2018 refactored sample ran in .46. This is a notable difference from the original code. 
 
 
-###VBA Challenge: Original vs. Refactored Performance Comparison
-####See Enclosed Performance Support 2017 **[https://github.com/ljlodl5/Stock-Analysis/blob/main/Resources/VBA%20Challenge%202017%20Comparison%20.png]**
-####See Enclosed Performance Support 2018 **[https://github.com/ljlodl5/Stock-Analysis/blob/main/Resources/VBA%20Challenge%202018%20Comparison%20.png]**
+### VBA Challenge: Original vs. Refactored Performance Comparison
 ![Performance Support 2017](https://github.com/ljlodl5/Stock-Analysis/blob/main/Resources/VBA%20Challenge%202017%20Comparison%20.png)
+![Performance Support 2018](https://github.com/ljlodl5/Stock-Analysis/blob/main/Resources/VBA%20Challenge%202018%20Comparison%20.png)
 
 ### VBA Challenge: Original vs. Refactored Code Comparison 
-#### See Enclosed Code Support **[https://github.com/ljlodl5/Stock-Analysis/blob/main/Resources/VBA%20Challenge%20Code%20Comparison.png]**
+![Refactored Code Support][https://github.com/ljlodl5/Stock-Analysis/blob/main/Resources/VBA%20Challenge%20Code%20Comparison.png]**
 
 ## **Results**
 ### **VBA Script (Stock-Analysis) Advantages and Disadvantages of Refactoring Code**
