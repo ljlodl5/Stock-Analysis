@@ -20,8 +20,10 @@ From start to finish the code in the 2018 refactored sample ran in .46. This is 
 
 
 ### VBA Challenge: Original vs. Refactored Performance Comparison
-![Performance Support 2017](https://github.com/ljlodl5/Stock-Analysis/blob/main/Resources/VBA%20Challenge%202017%20Comparison%20.png)
-
+![Performance Original 2017]()
+![Performance Refactored 2017]()
+![Performance Original 2018]()
+![Performance Refactored 2018]()
 
 ### VBA Challenge: Original vs. Refactored Code Comparison 
 ![Refactored Code Support](https://github.com/ljlodl5/Stock-Analysis/blob/main/Resources/VBA%20Challenge%20Code%20Comparison.png)
