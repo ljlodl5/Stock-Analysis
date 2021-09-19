@@ -16,7 +16,7 @@ Investment decisions require quick turnaround analysis. If a client wanted to se
 This subroutine **also** provided the correct output for ticker name, volume and return for a small dataset of green stocks. The goal of this subroutine was to take the original code and refactor the statements in order to improve performance.  
 This was obtained by identifying a ticker index and associating it to several arrays. The arrays ticker, volume, and return must share the same datatype, respectively. The advantage to using an index and arrays was the elimination of the nested loop, and reduction of memory and steps to associate the stock detailed inputs to the aggregated outputs.   
 Then similar to the original stock analysis, the output worksheet (re: Stock Analysis) was formatted for look and feel. 
-From start to finish the code in the 2018 refactored sample ran in .46. This is a notable difference from the original code. 
+From start to finish the code in the 2018 refactored sample ran in .46 seconds. This is a notable difference from the original code. 
 
 
 ### VBA Challenge: Original vs. Refactored Performance Comparison
@@ -31,11 +31,11 @@ From start to finish the code in the 2018 refactored sample ran in .46. This is 
 ## **Results**
 ### **VBA Script (Stock-Analysis) Advantages and Disadvantages of Refactoring Code**
 #### Advantages
-The most noticeable advantage to the code refactoring is the increased performance. The factored stock-analysis macro runs ~5x faster than the original. This can be attributed to the index/array advantage and the reduction of the nested loop. 
+The most noticeable advantage to the code refactoring is the increased performance. The refactored stock-analysis macro runs ~5x faster than the original. This can be attributed to the index/array advantage and the reduction of the nested loop. 
 Also when running the macro multiple times the variation in run speed is greater when the code underperforms. The refactored code provides a stronger predictor of when it will finish than the original code. 
 Begin/end variance may not seem like a large impact for a small dataset, however a robust dataset and strict deadlines may require stronger reliability on assessing when the analysis will be complete. 
 Original Code Run Times:   (Highest=5.5 seconds; Lowest=2.2 seconds)
-Refactored Code Run Times: (Highest=.88 seconds; lowest = .3) 
+Refactored Code Run Times: (Highest=.88 seconds; lowest = .3 seconds) 
 
 #### Disadvantages
 There are a couple disadvantages to refactoring code specific to this exercise. For one, it took additional time to reconfigure an already working concept with no guarantee of performance improvement.     
