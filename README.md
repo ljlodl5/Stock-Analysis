@@ -20,9 +20,16 @@ From start to finish the code in the 2018 refactored sample ran in .46 seconds. 
 
 
 ### VBA Challenge: Original vs. Refactored Performance Comparison
+#### Performance Original 2017 
 ![Performance Original 2017](https://github.com/ljlodl5/Stock-Analysis/blob/main/Resources/VBA%20Challenge%202017%20Original.png)
+
+#### Performance Refactored 2017 
 ![Performance Refactored 2017](https://github.com/ljlodl5/Stock-Analysis/blob/main/Resources/VBA%20Challenge%202017%20Refactored.png)
+
+#### Performance Original 2018
 ![Performance Original 2018](https://github.com/ljlodl5/Stock-Analysis/blob/main/Resources/VBA%20Challenge%202018%20Original%20.png)
+
+#### Performance Refactored 2018
 ![Performance Refactored 2018](https://github.com/ljlodl5/Stock-Analysis/blob/main/Resources/VBA%20Challenge%202018%20Refactored.png)
 
 ### VBA Challenge: Original vs. Refactored Code Comparison 
