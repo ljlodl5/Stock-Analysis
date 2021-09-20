@@ -35,7 +35,7 @@ From start to finish the code in the 2018 refactored sample ran in .46 seconds. 
 ### VBA Challenge: Original vs. Refactored Code Comparison 
 ![Refactored Code Support](https://github.com/ljlodl5/Stock-Analysis/blob/main/Resources/VBA%20Challenge%20Code%20Comparison.png)
 
-## **Results**
+## **Summary**
 
 ### **General Advantages and Disadvantages of Refactoring Code**
 #### Advantages 
@@ -48,7 +48,7 @@ There are no guarantees that the perfomance benefit will be worth the time inves
 
 ### **VBA Script (Stock-Analysis) Pros and Cons of Refactoring Code**
 #### Pros
-The most noticeable advantage to the code refactoring is the increased performance. The refactored stock-analysis macro runs ~5x faster than the original. This can be attributed to the index/array advantage and the reduction of the nested loop. 
+The most noticeable advantage to the code refactoring is the increased performance. The refactored stock-analysis macro **runs ~5x faster than the original**. This can be attributed to the index/array advantage and the reduction of the nested loop. 
 Also when running the macro multiple times the variation in run speed is greater when the code underperforms. The refactored code provides a stronger predictor of when it will finish than the original code. 
 Begin/end variance may not seem like a large impact for a small dataset, however a robust dataset and strict deadlines may require stronger reliability on assessing when the analysis will be complete. 
 Original Code Run Times:   (Highest=5.5 seconds; Lowest=2.2 seconds)
