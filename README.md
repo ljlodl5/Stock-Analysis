@@ -36,21 +36,6 @@ From start to finish the code in the 2018 refactored sample ran in .46 seconds. 
 ![Refactored Code Support](https://github.com/ljlodl5/Stock-Analysis/blob/main/Resources/VBA%20Challenge%20Code%20Comparison.png)
 
 ## **Results**
-### **VBA Script (Stock-Analysis) Advantages and Disadvantages of Refactoring Code**
-#### Advantages
-The most noticeable advantage to the code refactoring is the increased performance. The refactored stock-analysis macro runs ~5x faster than the original. This can be attributed to the index/array advantage and the reduction of the nested loop. 
-Also when running the macro multiple times the variation in run speed is greater when the code underperforms. The refactored code provides a stronger predictor of when it will finish than the original code. 
-Begin/end variance may not seem like a large impact for a small dataset, however a robust dataset and strict deadlines may require stronger reliability on assessing when the analysis will be complete. 
-Original Code Run Times:   (Highest=5.5 seconds; Lowest=2.2 seconds)
-Refactored Code Run Times: (Highest=.88 seconds; lowest = .3 seconds) 
-
-#### Disadvantages
-There are a couple disadvantages to refactoring code specific to this exercise. For one, it took additional time to reconfigure an already working concept with no guarantee of performance improvement.     
-Second and perhaps minor by comparison, it is much easier to conceptually understand the routines of a nested function than to associate arrays with an index function. However, the latter is an essential building block to other code platforms which compartmentalize and output larger datasets.
-Even when the code is legible, understood and working, there can be a more efficient way to produce that code and to adhere to "Don't Repeat Yourself (DRY)."        
-The point was taken as I encountered a small issue of my own and erroneously rebuilt a nested function. Thus I found my 'refactored' performance was virtually the same as the the original code.* 
-*Credit to https://github.com/AndrejaCH/stock-analysis/blob/master/Graphics/CodeRefactored.PNG for identifying a begin 'For Loop' statement missing in my version of the refactored code.*
-By isolating the loops I was able to take full advantage of the index/array. 
 
 ### **General Advantages and Disadvantages of Refactoring Code**
 #### Advantages 
@@ -61,6 +46,21 @@ General disadvantages to refactoring are time and project risk. Not only is a de
 If change in function/data does occur, additional time may be spent trying to uncover the 'version of truth.'  
 There are no guarantees that the perfomance benefit will be worth the time invested. It is important to gauge the level of service/time you are trying to achieve and the amount of time/$ you are willing to invest to refactor. 
 
+### **VBA Script (Stock-Analysis) Pros and Cons of Refactoring Code**
+#### Pros
+The most noticeable advantage to the code refactoring is the increased performance. The refactored stock-analysis macro runs ~5x faster than the original. This can be attributed to the index/array advantage and the reduction of the nested loop. 
+Also when running the macro multiple times the variation in run speed is greater when the code underperforms. The refactored code provides a stronger predictor of when it will finish than the original code. 
+Begin/end variance may not seem like a large impact for a small dataset, however a robust dataset and strict deadlines may require stronger reliability on assessing when the analysis will be complete. 
+Original Code Run Times:   (Highest=5.5 seconds; Lowest=2.2 seconds)
+Refactored Code Run Times: (Highest=.88 seconds; lowest = .3 seconds) 
 
+#### Cons
+There are a couple disadvantages to refactoring code specific to this exercise. For one, it took additional time to reconfigure and test an already working concept with no guarantee of performance improvement.     
+Second it is much easier to conceptually understand the routines of a nested function than to associate arrays with an index function, thus there can be refactoring time and effort that was not anticipated.  
+It is important to address these cons. 
+Indexing/array functionality is an essential building block to other code platforms which compartmentalize and output larger datasets. Even when the code is legible, understood and working, it is important to strive for continuous improvement and a "Don't Repeat Yourself (DRY)" mentality.       
+The point was taken as I encountered a small issue of my own and erroneously rebuilt a nested function. Thus I found my 'refactored' performance was virtually the same as the the original code.* 
+*Credit to https://github.com/AndrejaCH/stock-analysis/blob/master/Graphics/CodeRefactored.PNG for identifying a begin 'For Loop' statement missing in my version of the refactored code.*
+By taking the time to discover a better method (re: isolating the loops and fully using the index/array function) I was able to work this con into an advantage.   
 
 
