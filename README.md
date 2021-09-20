@@ -51,8 +51,8 @@ There are no guarantees that the perfomance benefit will be worth the time inves
 The most noticeable advantage to the code refactoring is the increased performance. The refactored stock-analysis macro **runs ~5x faster than the original**. This can be attributed to the index/array advantage and the reduction of the nested loop. 
 Also when running the macro multiple times the variation in run speed is greater when the code underperforms. The refactored code provides a stronger predictor of when it will finish than the original code. 
 Begin/end variance may not seem like a large impact for a small dataset, however a robust dataset and strict deadlines may require stronger reliability on assessing when the analysis will be complete. 
-Original Code Run Times:   (Highest=5.5 seconds; Lowest=2.2 seconds)
-Refactored Code Run Times: (Highest=.88 seconds; lowest = .3 seconds) 
+##### Original Code Run Times:   (Highest=5.5 seconds; Lowest=2.2 seconds)
+##### Refactored Code Run Times: (Highest=.88 seconds; lowest = .3 seconds) 
 
 #### Cons
 There are a couple disadvantages to refactoring code specific to this exercise. For one, it took additional time to reconfigure and test an already working concept with no guarantee of performance improvement.     
