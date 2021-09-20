@@ -9,7 +9,7 @@ The focus of the VBA Challenge was specifically an exercise in refactoring. The 
 **Original stock analysis**: 
 This subroutine provided the correct output for ticker name, volume and return for a small dataset of green stocks. The code for obtaining the volume and return of 12 tickers utilized two nested loops. 
 The inner loop stepped through all the rows in the respective 2017 and 2018 dataset worksheets before the outer loop associated the details to the respective rows and columns. Then the output worksheet (re: Stock Analysis) was formatted for look and feel. 
-From start to finish the code in the 2018 original sample ran in 2.27 seconds. Initially this automated return may seem fast, but it is a very small subset of 12 tickers and requested output (3 fields). 
+From start to finish the code in the 2018 original sample ran in 2.27 seconds. Initially this automated return may seem fast, but it is a very small subset (12 tickers) and requested output (3 fields). 
 Investment decisions require quick turnaround analysis. If a client wanted to see an unfiltered list of stock exchange tickers (ex: NYSE) and required additional output for investment decisions, a nested loop may not be optimal. 
 
 **Refactored stock analysis**: 
@@ -46,11 +46,11 @@ Refactored Code Run Times: (Highest=.88 seconds; lowest = .3 seconds)
 
 #### Disadvantages
 There are a couple disadvantages to refactoring code specific to this exercise. For one, it took additional time to reconfigure an already working concept with no guarantee of performance improvement.     
-Second and perhaps minor by comparison, it is much easier to conceptually understand the routines of a nested function than to associate arrays with an index function. 
-I encountered a small issue of my own as I erroneously rebuilt a nested function and found my 'refactored' performance was virtually the same as the the original code.*
-*Credit to https://github.com/AndrejaCH/stock-analysis/blob/master/Graphics/CodeRefactored.PNG for identifying a specific placement of 'For Loop' missing in my version of the refactored code.*
-    
-
+Second and perhaps minor by comparison, it is much easier to conceptually understand the routines of a nested function than to associate arrays with an index function. However, the latter is an essential building block to other code platforms which compartmentalize and output larger datasets.
+Even when the code is legible, understood and working, there can be a more efficient way to produce that code and to adhere to "Don't Repeat Yourself (DRY)."        
+The point was taken as I encountered a small issue of my own and erroneously rebuilt a nested function. Thus I found my 'refactored' performance was virtually the same as the the original code.* 
+*Credit to https://github.com/AndrejaCH/stock-analysis/blob/master/Graphics/CodeRefactored.PNG for identifying a begin 'For Loop' statement missing in my version of the refactored code.*
+By isolating the loops I was able to take full advantage of the index/array. 
 
 ### **General Advantages and Disadvantages of Refactoring Code**
 #### Advantages 
@@ -58,7 +58,7 @@ There are multiple advantages to refactoring in general. Refactoring not only ca
 It is also important to note the original needs of a client can change over time. Data inputs and outputs can be dynamic and grow; the same manner of coding that worked originally can become outdated and drive down performance. 
 #### Disadvantages
 General disadvantages to refactoring are time and project risk. Not only is a developer coding and unit testing, regression and parallel QA/UAT time may also be required to ensure key functionality/data was not changed in error. 
-If change in function/data does occur, additional time may be spent trying to uncover a version of truth. 
+If change in function/data does occur, additional time may be spent trying to uncover the 'version of truth.'  
 There are no guarantees that the perfomance benefit will be worth the time invested. It is important to gauge the level of service/time you are trying to achieve and the amount of time/$ you are willing to invest to refactor. 
 
 
